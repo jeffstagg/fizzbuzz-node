@@ -1,18 +1,19 @@
 {
-    "name": "fizzbuzz",
-    "version": "1.0.0",
-    "description": "A web api that will return the results of fizzbuzz given a number",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://www.jeffstagg.com"
-    },
-    "author": "Jeff Stagg",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.15.2"
-    }
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "A web api that will return the results of fizzbuzz given a number",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.jeffstagg.com"
+  },
+  "author": "Jeff Stagg",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
 }

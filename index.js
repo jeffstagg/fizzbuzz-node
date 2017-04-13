@@ -1,5 +1,10 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 var calculateNumber = function(number) {
     var returnString = '';
@@ -20,8 +25,8 @@ var fizzle = function(number) {
     return number;
 }
 
-app.get('/fizz/:number', function(req, res) {
-    var number = req.params.number;
+app.post('/fizz', function(req, res) {
+    var number = req.body.number;
     res.send(calculateNumber(number));
 });
 
